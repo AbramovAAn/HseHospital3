@@ -1,14 +1,19 @@
+{% load static %}
+
+
+
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="ru"><head>
+<html style="font-size: 16px;" lang="ru">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Добро пожаловать​">
     <meta name="description" content="">
     <title>Главная</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Главная.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href={%static "css/nicepage.css"%} media="screen">
+<link rel="stylesheet" href={%static "css/Главная.css"%} media="screen">
+     <script class="u-script" type="text/javascript" src={%static "js/jquery.js"%} defer=""></script>
+    <script class="u-script" type="text/javascript" src={%static "js/nicepage.js"%} defer=""></script>
     <meta name="generator" content="Nicepage 6.7.6, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
@@ -28,15 +33,17 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/Untitled_logo_1_free-file2.jpg"
+		"logo": "images/logo.jpg"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Главная">
     <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header" id="sec-3b2e"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="300" data-image-height="300">
-          <img src="images/Untitled_logo_1_free-file2.jpg" class="u-logo-image u-logo-image-1">
+          <img src={%static "images/logo.jpg"%}
+          class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -74,7 +81,7 @@
       </div></header>
     <section class="u-clearfix u-grey-10 u-valign-middle u-section-1" id="carousel_18b3">
       <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
-      <img src="images/dsg-min.jpg" class="u-align-left u-image u-image-1" data-image-width="1200" data-image-height="800">
+      <img src= {%static "images/analisi.jpg"%} class="u-align-left u-image u-image-1" data-image-width="1200" data-image-height="800">
       <div class="u-align-left u-container-style u-group u-radius u-shape-round u-white u-group-1">
         <div class="u-container-layout u-container-layout-1">
           <h2 class="u-text u-text-palette-1-base u-text-1">Добро пожаловать!</h2>
@@ -83,7 +90,8 @@
       </div>
       <div class="u-palette-1-base u-shape u-shape-circle u-shape-2"></div>
     </section>
-    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-section-2" src="" id="sec-09a5">
+    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-section-2" src={%static "images/asd.jpg"%} id="sec-09a5">
+
       <div class="u-expanded-height-lg u-expanded-height-md u-shape u-shape-svg u-text-palette-1-base u-shape-1">
         <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 100" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ffba"></use></svg>
         <svg class="u-svg-content" viewBox="0 0 160 100" x="0px" y="0px" id="svg-ffba"><path d="M100,0l60,100H0V0H100z"></path></svg>
@@ -93,7 +101,7 @@
           <div class="u-layout-row">
             <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-35 u-layout-cell-1">
               <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <div alt="" class="u-image u-image-circle u-image-1" data-image-width="1200" data-image-height="800"></div>
+                <img src={%static "images/asd.jpg"%} class="u-image u-image-circle u-image-1" data-image-width="1200" data-image-height="800"></div>
               </div>
             </div>
             <div class="u-container-style u-layout-cell u-right-cell u-shape-rectangle u-size-25 u-layout-cell-2">
@@ -152,9 +160,9 @@
           <div class="u-layout-row">
             <div class="u-size-30 u-size-60-md">
               <div class="u-layout-col">
-                <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-40 u-layout-cell-1" src="">
+                <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-40 u-layout-cell-1" >
                   <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
-                    <div class="u-image u-image-circle u-image-1" data-image-width="800" data-image-height="676"></div>
+                    <img class="u-image u-image-circle u-image-1" src={%static "images/sdff.jpg"%} data-image-width="800" data-image-height="676">
                   </div>
                 </div>
                 <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-2">
@@ -232,11 +240,9 @@
                     </h1>
                   </div>
                 </div>
-                <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-40 u-layout-cell-4" src="">
+                <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-40 u-layout-cell-4" >
                   <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-4">
-                    <div class="u-image u-image-circle u-image-2" data-image-width="800" data-image-height="676"></div>
-                  </div>
-                </div>
+                    <img class="u-image u-image-circle u-image-2" src={%static "images/fd.jpg"%} data-image-width="800" data-image-height="676">
               </div>
             </div>
           </div>
@@ -245,7 +251,7 @@
     </section>
     <section class="u-align-left u-clearfix u-white u-section-4" id="carousel_823c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-1" src="images/sd-min.jpg" data-image-width="1200" data-image-height="800">
+        <img class="u-image u-image-1" data-image-width="1200" data-image-height="800" src={%static "images/sd-min.jpg"%}>
         <div class="custom-expanded u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-style u-list-item u-palette-1-base u-radius u-repeater-item u-shape-round u-list-item-1">
@@ -309,7 +315,7 @@
         <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 100" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3583"></use></svg>
         <svg class="u-svg-content" viewBox="0 0 160 100" x="0px" y="0px" id="svg-3583"><path d="M100,0l60,100H0V0H100z"></path></svg>
       </div>
-      <img class="u-image u-image-1" src="images/x-min.jpg" data-image-width="1500" data-image-height="1000">
+      <img class="u-image u-image-1" src={%static "images/womananddoctor.jpg"%} data-image-width="1500" data-image-height="1000">
       <div class="u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div class="u-container-style u-list-item u-radius u-repeater-item u-shape-round u-white u-list-item-1">
@@ -409,27 +415,24 @@
       </div>
     </section>
     <section class="u-align-center-sm u-align-center-xs u-clearfix u-section-9" id="sec-7d6a">
-      <div class="u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-expanded-height-lg u-expanded-height-xl u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-palette-1-base u-shape u-shape-rectangle u-shape-1" ></div>
       <div class="data-layout-selected u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
         <div class="u-gutter-0 u-layout">
           <div class="u-layout-row">
-            <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-25 u-size-60-md u-image-1" src="" data-image-width="626" data-image-height="939">
-              <div class="u-container-layout u-valign-middle u-container-layout-1" src=""></div>
-            </div>
+            <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-25 u-size-60-md u-image-1" data-image-width="626" data-image-height="939">
+              <img src="{%static "images/doctors.jpg"%}" class="u-container-layout u-valign-middle u-container-layout-1">
             <div class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-layout-cell u-size-16-sm u-size-16-xs u-size-18-lg u-size-18-xl u-size-60-md u-layout-cell-2">
               <div class="u-container-layout u-valign-middle u-container-layout-2">
                 <h3 class="u-text u-text-1">Наши специалисты </h3>
                 <p class="u-text u-text-2"> Команда <span style="font-weight: 700;">опытных профессионалов</span>, которые стремятся предоставить вам <span style="font-weight: 700;"> &nbsp; &nbsp;</span>
-                  <span style="font-weight: 700;">л</span>
-                  <span style="font-weight: 700;"></span>
-                  <span style="font-weight: 700;">учшее</span> стоматологическое лечение, используя <span style="font-weight: 700;">передовые практики <span style="font-weight: 400;">и технологии</span>
+                  <span style="font-weight: 700;">лучшее</span> стоматологическое лечение, используя <span style="font-weight: 700;">передовые практики <span style="font-weight: 400;">и технологии</span>
                   </span>.
                 </p>
                 <a href="https://nicepage.online" class="u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-palette-1-dark-1 u-palette-1-base u-radius u-btn-1">пОДРОБНЕЕ </a>
               </div>
             </div>
             <div class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-container-style u-image u-layout-cell u-right-cell u-size-17-lg u-size-17-xl u-size-19-sm u-size-19-xs u-size-60-md u-image-2" data-image-width="626" data-image-height="937">
-              <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
+              <img class="u-container-layout u-valign-middle u-container-layout-3" src="{%static "images/happypasient.jpg"%}"  style ='min-width: 332px !important;'>
             </div>
           </div>
         </div>
